@@ -1,0 +1,48 @@
+/* Contact Box */
+.contact-box {
+    position: fixed;
+    bottom: 2rem; /* Adjust position from the bottom */
+    left: 2rem; /* Adjust position from the left */
+    border: 2px solid white; /* White outline */
+    border-radius: 10px; /* Optional: Slightly rounded corners */
+    padding: 1rem 1rem; /* Spacing inside the box */
+    background: transparent; /* Transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+  
+.contact-box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+  
+.contact-box a {
+    color: white; /* Text color */
+    text-decoration: none;
+    position: relative;
+}
+
+.c-text-en {
+    font-size: clamp(2rem, 6vw, 4.5rem); /* Responsive font size */
+}
+
+.c-text-ja {
+    font-size: clamp(1.6rem, 4.5vw, 3.8rem); /* Responsive font size */
+}
+
+.contact-box a:before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    height: 2px;
+    width: 0;
+    background: white; /* Hover underline color */
+    border-radius: 50px;
+    transition: width 0.4s ease; /* Smooth underline animation */
+}
+
+.contact-box a:hover:before {
+    width: 100%; /* Extend underline on hover */
+}

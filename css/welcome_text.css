@@ -1,0 +1,55 @@
+/* Welcome Text Section */
+.wt {
+    position: fixed;
+    top: 18%;
+    padding-left: 1rem;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden; /* Prevent overflow during animation */
+}
+
+/* Top Text */
+.wt .wt-top {
+    margin-bottom: clamp(0rem, 5vh, 4rem);
+    position: absolute;
+    bottom: 52%; /* Fixed distance from the line */
+    color: white;
+    font-size: clamp(4.5rem, 14vw, 11rem);
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2.8s forwards 1.6s; /* Fade-in with delay */
+    z-index: 2; /* Above the line */
+}
+
+/* Bottom Text */
+.wt .wt-bottom {
+    margin-top: clamp(0rem, 4vh, 3rem);
+    position: absolute;
+    top: 36%; /* Fixed distance from the line */
+    color: white;
+    font-size: clamp(4rem, 13vw, 10rem);
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2.8s forwards 1.6s; /* Fade-in with delay */
+    z-index: 2; /* Above the line */
+}
+
+/* Horizontal Line Animation */
+.wt::before {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    top: 40%;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transform: translateX(-50%) translateY(-50%);
+    animation: growLine 1.5s ease-out forwards;
+    z-index: 1; /* Behind the text */
+}

@@ -1,0 +1,81 @@
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes growLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50vw; /* Default width for medium screens */
+    }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+    .wt::before {
+        animation: growLine 1.5s ease-out forwards;
+}
+
+@keyframes growLine {
+        0% {
+        width: 0;
+        }
+        100% {
+        width: 60vw; /* Line is 60% of viewport width on smaller screens */
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .wt::before {
+        animation: growLine 1.5s ease-out forwards;
+}
+
+@keyframes growLine {
+        0% {
+        width: 0;
+        }
+        100% {
+        width: 50vw; /* Line is 50% of viewport width on medium screens */
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .wt::before {
+        animation: growLine 1.5s ease-out forwards;
+}
+
+@keyframes growLine {
+        0% {
+        width: 0;
+        }
+        100% {
+        width: 40vw; /* Line is 40% of viewport width on larger screens */
+        }
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+  
