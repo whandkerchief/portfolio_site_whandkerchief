@@ -6,60 +6,55 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Disable horizontal overflow globally */
+  overflow-x: hidden; 
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensure the body takes full height */
-  width: 100%; /* Prevent any content from causing horizontal overflow */
+  height: 100%; 
+  width: 100%;
   overflow:hidden;
 }
 
-/* For Webkit browsers (Chrome, Safari, Opera) */
 body::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar */
+  display: none; 
 }
 
-/* For Firefox */
 body {
-  scrollbar-width: none; /* Hide the scrollbar in Firefox */
+  scrollbar-width: none; 
 }
 
-/* Main Container */
 .main {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow-x: hidden; /* Prevent horizontal overflow in the main container */
-  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; 
+  overflow-y: auto; 
   display: flex;
 }
 
 /* Video Background */
 .bg-video {
-  position: fixed; /* Fix the video in place */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Keep the video behind the content */
+  z-index: -1; 
 }
 
-/* Content Section */
 .content {
   position: relative;
   width: 100%;
-  min-height: 100%; /* Ensure content takes up full height */
+  min-height: 100%; 
   display: flex;
   flex-direction: column;
-  overflow-y: scroll; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Disable horizontal scrolling inside content */
+  overflow-y: scroll; 
+  overflow-x: hidden; 
 }
 
-/* Fade In / Fade Out Animations */
 .fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;

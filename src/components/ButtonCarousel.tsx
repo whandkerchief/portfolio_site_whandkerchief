@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 interface ButtonCarouselProps {
-    buttons: { label: string; labelEn: string; labelJa: string }[]; // Updated buttons to include language-specific labels
+    buttons: { label: string; labelEn: string; labelJa: string }[];
     onButtonClick: (buttonLabel: string) => void;
-    currentLanguage: string; // Add currentLanguage prop
+    currentLanguage: string;
 }
 
 export default function ButtonCarousel({ buttons, onButtonClick, currentLanguage }: ButtonCarouselProps): JSX.Element {
@@ -11,7 +11,7 @@ export default function ButtonCarousel({ buttons, onButtonClick, currentLanguage
 
     const handleClick = (index: number) => {
         if (index === activeIndex) {
-            onButtonClick(buttons[index].label); // Trigger page jump with the correct label based on the language
+            onButtonClick(buttons[index].label); 
         }
         setActiveIndex(index);
     };

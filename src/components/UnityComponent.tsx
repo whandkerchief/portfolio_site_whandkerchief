@@ -17,7 +17,7 @@ return (
         <Unity
             unityProvider={unityProvider}
             style={{
-                height: "50vh", // Adjust as necessary
+                height: "50vh", 
                 width: "100vh",
             }}
         />

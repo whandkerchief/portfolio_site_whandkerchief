@@ -57,9 +57,8 @@
 }
 
 /* Language Toggle */
-/* Language Toggle */
 .language-toggle {
-  margin-left: auto; /* Push toggle to the far right */
+  margin-left: auto; 
 }
 
 .language-toggle button {
@@ -85,5 +84,5 @@
 }
 
 .language-toggle button:hover:before {
-  width: 100%; /* Underline appears only on hover */
+  width: 100%; 
 }

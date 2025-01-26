@@ -101,15 +101,15 @@ export default function AboutPage({ currentLanguage }: AboutPageProps): JSX.Elem
                 <div className="page-body">
                 {currentLanguage === 'en' ? (
                         <>
-                            <strong>May 2020</strong>: SEO Optimization Intern – CarterJMRN (Tokyo, Japan)
+                            <strong>May 2020</strong>: Search Engine Optimization Intern – CarterJMRN (Tokyo, Japan)
                             <br />
                             <strong>June–August 2021</strong>: Goat Farmer – Terre Di Chiena (Donini, Italy)
                             <br />
-                            <strong>May–July 2022</strong>: Digital Admin Assistant – ISS Lancaster University (Lancaster, UK)
+                            <strong>May–July 2022</strong>: Digital Admin Assistant – ISS(Information Systems Services) Lancaster University (Lancaster, UK)
                             <br />
                             <strong>November 2022–March 2023</strong>: Integrated Systems Developer Intern – School Synergy (Preston, UK)
                             <br />
-                            <strong>March 2023–May 2024</strong>: VR Developer – ISS ITPI (Lancaster, UK)
+                            <strong>March 2023–May 2024</strong>: VR Developer – ISS ITPI(IT Partnering & Innovation) (Lancaster, UK)
                             <br />
                             <strong>Summers 2023, 2024</strong>: Sardine Fisherman – 丸甚水産 (Kagawa, Japan)
                             <br />
@@ -121,11 +121,11 @@ export default function AboutPage({ currentLanguage }: AboutPageProps): JSX.Elem
                             <br />
                             <strong>２０２１年６月～８月</strong>: ヤギ使い – Terre Di Chiena (ドニーニ・イタリア)
                             <br />
-                            <strong>２０２２年５月～７月</strong>: ウェブサイト管理アシスタント – ISS Lancaster University (ランカスター・イギリス)
+                            <strong>２０２２年５月～７月</strong>: ウェブサイト管理アシスタント – ISS(Information Systems Services) Lancaster University (ランカスター・イギリス)
                             <br />
                             <strong>２０２２年１１月～２０２３年３月</strong>: システムデベロッパインターン – School Synergy (プレストン・イギリス)
                             <br />
-                            <strong>２０２３年６月～８月</strong>: VR体験開発者 – ISS ITPI (ランカスター・イギリス)
+                            <strong>２０２３年６月～８月</strong>: VR体験開発者 – ISS ITPI(IT Partnering & Innovation) (ランカスター・イギリス)
                             <br />
                             <strong>２０２３年、２０２４年　夏季</strong>: イワシ漁師 – 丸甚水産 (香川・日本)
                             <br />

@@ -15,7 +15,16 @@ function App() {
 
   return (
     <div className="main">
-      <video className='bg-video' src={BGvid} autoPlay loop muted />
+      <video className='bg-video' src={BGvid} 
+      autoPlay 
+      loop muted 
+      playsInline
+      onCanPlayThrough={(e) => {
+        // Make sure the video starts playing when it's ready
+        const video = e.target as HTMLVideoElement;
+        video.play();
+      }}
+      />
       <div>
         <Navbar currentLanguage={currentLanguage} setLanguage={setCurrentLanguage} />
         <TransitionGroup>

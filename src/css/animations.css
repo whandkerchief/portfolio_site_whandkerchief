@@ -14,7 +14,7 @@
         width: 0;
     }
     100% {
-        width: 50vw; /* Default width for medium screens */
+        width: 50vw; 
     }
 }
 
@@ -29,7 +29,7 @@
         width: 0;
         }
         100% {
-        width: 60vw; /* Line is 60% of viewport width on smaller screens */
+        width: 60vw; 
         }
     }
 }
@@ -44,7 +44,7 @@
         width: 0;
         }
         100% {
-        width: 50vw; /* Line is 50% of viewport width on medium screens */
+        width: 50vw; 
         }
     }
 }
@@ -59,7 +59,7 @@
         width: 0;
         }
         100% {
-        width: 40vw; /* Line is 40% of viewport width on larger screens */
+        width: 40vw; 
         }
     }
 }

@@ -39,7 +39,7 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos }) => {
               key={index}
               className={`photo ${position}`}
               style={{ backgroundImage: `url(${photo})` }}
-              onClick={handleClick} // Attach click handler here
+              onClick={handleClick} 
             ></div>
           );
         })}

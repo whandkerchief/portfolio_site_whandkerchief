@@ -1,9 +1,8 @@
-/* General Page Styling */
 .container {
-    height: 100vh; /* Ensure container takes full viewport height */
-    overflow-y: auto; /* Enable vertical scrolling for the container if needed */
-    margin: 0; /* Remove margins */
-    position: relative; /* Relative positioning for child elements */
+    height: 100vh;
+    overflow-y: auto;
+    margin: 0; 
+    position: relative;
 }
 
 .page {
@@ -11,44 +10,50 @@
     pointer-events: none;
     transition: opacity 0.5s ease;
     position: fixed;
-    top: 6rem; /* Leave space below the header */
-    left: 3rem; /* Add space on the left */
-    right: 3rem; /* Add space on the right */
-    bottom: 10vh; /* Leave space above the footer */
-    height: auto; /* Let the height adjust based on top and bottom settings */
-    overflow-y: auto; /* Enable vertical scrolling */
-    clip-path: inset(0 0 0 0); /* No clipping to avoid cutting off content */
-    scrollbar-width: none; /* Hide scrollbar (Firefox) */
+    top: 6rem;
+    left: 3rem;
+    right: 3rem;
+    bottom: 10vh;
+    height: auto;
+    overflow-y: auto;
+    clip-path: inset(0 0 0 0);
+    scrollbar-width: none;
 }
 
-/* Show page when the "faded" class is added */
 .page.faded {
     opacity: 1;
     pointer-events: auto;
 }
 
-/* Page Title Styling */
 .page-title {
-    font-size: clamp(2rem, 6vw, 4rem); /* Responsive font size */
+    font-size: clamp(2rem, 6vw, 4rem);
     margin-bottom: 1rem;
     position: relative;
     text-decoration: none;
     color: white;
     padding-bottom: 4px;
     max-width: 80vw;
-    display: inline-block; /* Make the border wrap around the text */
-    border: 2px solid white; /* Add a border around the text */
-    border-radius: 10px; /* Optional: Slightly rounded corners */
-    padding: 0.3rem 1rem; /* Spacing inside the box */
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
 }
 
-/* Page Body Styling */
 .page-body {
     margin-bottom: 1rem;
     position: relative;
     text-decoration: none;
     color: white;
-    font-size: clamp(1rem, 1.5vw, 2rem); /* Responsive font size */
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.page-body-large {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(1.5rem, 2.25vw, 3rem);
 }
 
 .page-body-link {
@@ -57,7 +62,7 @@
     position: relative;
     text-decoration: none;
     color: white;
-    font-size: clamp(1rem, 1.5vw, 2rem); /* Responsive font size */
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .page-body-link:before {
@@ -77,16 +82,16 @@
 
   .page-media-container {
     width: 100%;
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-photo {
     height: auto;
     max-height: 60vh;
     width: auto;
-    pointer-events: none; /* Prevent any interaction with the video */
+    pointer-events: none;
     border: 2px solid white;
 }
 
@@ -120,9 +125,11 @@
     .page-iframe {
         height: 30vh;
     }
+    .mobile-unsupported {
+        display: none;
+    }
 }
 
-/* Animation for Underline */
 @keyframes underline-animation {
     0% {
         width: 0%;

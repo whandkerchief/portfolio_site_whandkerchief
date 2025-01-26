@@ -1,9 +1,9 @@
 .photo-gallery {
     display: flex;
     align-items: flex;
-    justify-content: center; /* Center photos */
+    justify-content: center;
     position: relative;
-    width: 92vw; /* Reduced width for smaller gallery */
+    width: 92vw;
     height: clamp(7rem, 50vw, 28rem);
     overflow: hidden;
     margin: 0;
@@ -11,8 +11,8 @@
   
   .photos-container {
     display: flex;
-    justify-content: center; /* Center photos */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
     height: clamp(8rem, 40vw, 24rem);
@@ -27,7 +27,7 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s ease;
-    width: clamp(13rem, 57vw, 35rem);/* Adjust photo size for overlap */
+    width: clamp(13rem, 57vw, 35rem);
     height: clamp(8rem, 40vw, 24rem);
     opacity: 0;
   }
@@ -37,21 +37,20 @@
     border: 2px solid white;
     opacity: 1;
     transform: translateX(0) scale(1);
-    z-index: 3; /* Focused photo in front */
-    animation: bobbing;
+    z-index: 3;
   }
   
   .photo-left {
     border: 2px solid white;
     opacity: 0.6;
-    transform: translateX(-25vw) translateY(-2.5%) scale(0.7); /* Overlap to the left */
+    transform: translateX(-25vw) translateY(-2.5%) scale(0.7);
     z-index: 2;
   }
   
   .photo-right {
     border: 2px solid white;
     opacity: 0.6;
-    transform: translateX(25vw) translateY(-2.5%) scale(0.7); /* Overlap to the right */
+    transform: translateX(25vw) translateY(-2.5%) scale(0.7);
     z-index: 2;
   }
   

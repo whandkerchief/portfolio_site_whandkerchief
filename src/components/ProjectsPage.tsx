@@ -14,7 +14,7 @@ import replyImage2 from './../assets/reply-photos/Photo2.png';
 import experimentsImage1 from './../assets/Experiments-photos-and-videos/Photo1.png';
 import experimentsImage2 from './../assets/Experiments-photos-and-videos/Photo2.png';
 import experimentsVideo1 from './../assets/Experiments-photos-and-videos/Video1.mp4';
-import experimentsVideo2 from './../assets/Experiments-photos-and-videos/Video2.mov';
+import experimentsVideo2 from './../assets/Experiments-photos-and-videos/Video2.mp4';
 import gameImage1 from './../assets/game-photos/Photo1.png';
 import gameImage2 from './../assets/game-photos/Photo2.png';
 import gameImage3 from './../assets/game-photos/Photo3.jpg';
@@ -41,7 +41,7 @@ function RuskinVRContent({ currentLanguage }: RuskinVRContentProps): JSX.Element
             <div className={`page-body page-body-${languageClass}`}>
                 {currentLanguage === 'en' ? (
                     <>
-                        The ITPI team at Lancaster University focuses on designing innovative ventures that leverage emerging technologies to enhance learning. Composed of senior and also many student developers, the team has developed products such as the iLancaster app, which facilitates assignment management and lecture attendance tracking via Bluetooth. In 2023, the ITPI team expanded into virtual reality (VR), and I joined two other student developers in a team to work on projects aimed at integrating VR into the university’s educational environment.
+                        The ITPI (IT Partnering and Innovation) team at Lancaster University focuses on designing innovative ventures that leverage emerging technologies to enhance learning. Composed of senior and also many student developers, the team has developed products such as the iLancaster app, which facilitates assignment management and lecture attendance tracking via Bluetooth. In 2023, the ITPI team expanded into virtual reality (VR), and I joined two other student developers in a team to work on projects aimed at integrating VR into the university’s educational environment.                    
                     </>
                 ) : (
                     <>
@@ -148,7 +148,7 @@ function RuskinVRContent({ currentLanguage }: RuskinVRContentProps): JSX.Element
                     autoPlay
                     muted
                     loop
-                    playsInline // Ensures mobile browsers handle video playback better
+                    playsInline
                 >
                     <source src={ruskinVideo1} />
                     Your browser does not support the video tag.
@@ -159,7 +159,7 @@ function RuskinVRContent({ currentLanguage }: RuskinVRContentProps): JSX.Element
             <div className={`page-body page-body-${languageClass}`}>
                 {currentLanguage === 'en' ? (
                     <>
-                        Since the project was developed for two different types of headsets, I utilized the XR Hands API on Unity that implemented the OpenXR framework to interface with hand tracking data from the headsets. In the OpenXR framework, hands are tracked using a collection of joint data with accessible position data. By leveraging this I developed two hand tracking mechanisms: First was a swipe motion recognizer that detected a swipe motion based on the user's wrist rotation and velocity. The second was an object interaction mechanism that placed objects in the appropriate position based on the user’s hand positions, and scaled the objects based on how far apart the hands are. These two mechanisms were developed after numerous trials on students to find out which hand motions users found most comfortable. This was one of the main challenges with VR, as many users had never used their hands to interact in VR environments, and we were tasked with finding intuitive controls.
+                        Since the project was developed for two different types of headsets, I utilized the XR Hands API on Unity that implemented the OpenXR framework to interface with hand tracking data from the headsets. In the OpenXR framework, hands are tracked using a collection of joint data with accessible position information. By leveraging this I developed two hand tracking mechanisms: First was a swipe motion recognizer that detected a swipe motion based on the user's wrist rotation and velocity. The second was an object interaction mechanism that placed objects in the appropriate position based on the user’s hand positions, and scaled the objects based on how far apart the hands are. These two mechanisms were developed after numerous trials on students to find out which hand motions users found most comfortable. This was one of the main challenges with VR, as many users had never used their hands to interact in VR environments, and we were tasked with finding intuitive controls.                    
                     </>
                 ) : (
                     <>
@@ -216,7 +216,7 @@ interface ReplyChallengeContentProps {
 }
 
 function ReplyChallengeContent({ currentLanguage }: ReplyChallengeContentProps): JSX.Element {
-    const languageClass = currentLanguage === 'en' ? 'en' : 'jp'; // Determine the language class
+    const languageClass = currentLanguage === 'en' ? 'en' : 'jp'; 
 
     return (
         <div>
@@ -288,7 +288,7 @@ interface ExperimentsContentProps {
 }
 
 function ExperimentsContent({ currentLanguage }: ExperimentsContentProps): JSX.Element {
-    const languageClass = currentLanguage === 'en' ? 'en' : 'jp'; // Determine the language class
+    const languageClass = currentLanguage === 'en' ? 'en' : 'jp'; 
 
     return (
         <div>
@@ -324,7 +324,7 @@ function ExperimentsContent({ currentLanguage }: ExperimentsContentProps): JSX.E
                     autoPlay
                     muted
                     loop
-                    playsInline // Ensures mobile browsers handle video playback better
+                    playsInline 
                 >
                     <source src={experimentsVideo1} />
                     Your browser does not support the video tag.
@@ -349,7 +349,7 @@ function ExperimentsContent({ currentLanguage }: ExperimentsContentProps): JSX.E
                     autoPlay
                     muted
                     loop
-                    playsInline // Ensures mobile browsers handle video playback better
+                    playsInline 
                 >
                     <source src={experimentsVideo2} />
                     Your browser does not support the video tag.
@@ -381,11 +381,11 @@ interface GameProjectContentProps {
 }
 
 function GameProjectContent({ currentLanguage }: GameProjectContentProps): JSX.Element {
-    const languageClass = currentLanguage === 'en' ? 'en' : 'jp'; // Determine the language class
+    const languageClass = currentLanguage === 'en' ? 'en' : 'jp'; 
 
     return (
         <div>
-            <a href="https://github.com/whannah0809/IYWTDTLDIT" className='page-body-link'>
+            <a href="https://github.com/whannah0809/IYWTDTLDIT" className='page-body-link' style={{ fontSize: 'clamp(1.5rem, 2.25vw, 3rem)' }}>
                 {currentLanguage === 'en' ? 'Project GitHub' : 'プロジェクトGitHub'}
             </a>
             <br /><br />
@@ -418,7 +418,7 @@ function GameProjectContent({ currentLanguage }: GameProjectContentProps): JSX.E
             <div className={`page-body page-body-${languageClass}`}>
                 {currentLanguage === 'en' ? (
                     <>
-                        The story was originally created by my peer (the artist) as an animation project. However, we saw the potential for it to be created as a game, which I took on development for. The artist generated a revised storyboard and a collection of concept art, and I am taking on all game development aspects from character modeling, animations, shading, scene lighting, and interaction mechanisms. In developing the game, what I hold most important is the communication of the scene atmosphere and invoked feelings that my peer had intended in his concept drawings.
+                        The story was originally created by my peer (the artist) as an animation project. However we saw the potential for it to be created as a game which I took on development for. The artist generated a revised storyboard and a collection of concept art, and I am taking on all game development aspects from character modeling, animations, shading, scene lighting, and interaction mechanisms. In developing the game, what I hold most important is the communication of the scene atmosphere and invoked feelings that the artist had intended in his concept drawings.                    
                     </>
                 ) : (
                     <>
@@ -432,7 +432,7 @@ function GameProjectContent({ currentLanguage }: GameProjectContentProps): JSX.E
             <div className={`page-body page-body-${languageClass}`}>
                 {currentLanguage === 'en' ? (
                     <>
-                        Based on the concept art, I modeled the characters in Blender and utilized character rigging to create animations. In creating the characters, I had the artist generate character sheets with information about the characters’ personality, which I aimed to articulate in their designs and movements. The two main characters are juxtaposed in their character, with one being determined and the other being in despair. The determined character was therefore modeled with an exaggerated posture sticking out his chest, and walking with a swinging motion of his shoulders. The other was the opposite, with a slouching posture and a walking motion as if he were dragging his body along the floor.
+                        Based on the concept art, I modeled the characters on Blender, and utilized character rigging to create animations. In creating the characters, I had the artist generate character sheets with information about the characters’ personalities which I aimed to articulate in their designs and movements. The two main characters are juxtaposed, with one being determined, and the other being in despair. The determined character was therefore modeled with an exaggerated posture sticking out his chest, and walking with a swinging motion of his shoulders. The other was the opposite with a slouching posture and a walking motion as if he were dragging his body along the floor.
                     </>
                 ) : (
                     <>
@@ -448,7 +448,7 @@ function GameProjectContent({ currentLanguage }: GameProjectContentProps): JSX.E
             <div className={`page-body page-body-${languageClass}`}>
                 {currentLanguage === 'en' ? (
                     <>
-                        The overall feeling of the concept art has a hopeless, dreadful feel to it, which I wanted to communicate through an overall low-lit scene composition with an ominous green bloom effect. This was achieved using the Universal Render Pipeline post-processing feature along with fog and custom lighting. I also used a custom shader that utilizes the fresnel effect on the characters to match the scene lighting and atmosphere.
+                        The overall feeling of the concept art has a hopeless dreadful feel to it, which I wanted to communicate through an overall low lit scene composition, with an ominous green bloom effect. This was achieved using the Universal Render Pipeline post processing feature along with fog and custom lighting. I also used a custom shader that utilizes the fresnel effect on the characters to match the scene lighting and atmosphere.
                     </>
                 ) : (
                     <>
@@ -463,7 +463,7 @@ function GameProjectContent({ currentLanguage }: GameProjectContentProps): JSX.E
                     autoPlay
                     muted
                     loop
-                    playsInline // Ensures mobile browsers handle video playback better
+                    playsInline
                 >
                     <source src={gameVideo1} />
                     Your browser does not support the video tag.
@@ -487,14 +487,19 @@ function GameProjectContent({ currentLanguage }: GameProjectContentProps): JSX.E
                     </>
                 )}
             </div>
-            <br />
-            <div className={`page-body page-body-${languageClass}`}>
-                {currentLanguage === 'en' ? 'Play the opening scene of the game (mobile not supported):' : 'ゲームの冒頭をプレイできます（モバイル非対応）：'}
+            <br /><br/>
+            <div className='mobile-unsupported'>
+                <div className={`page-body page-body-${languageClass}`} style={{ fontSize: 'clamp(1.5rem, 2.25vw, 3rem)' }}>
+                    {currentLanguage === 'en' ? 'Play the opening scene of the game (mobile not supported):' : 'ゲームの冒頭をプレイできます（モバイル非対応）：'}
+                </div>
+                <div className={`page-body page-body-${languageClass}`}>
+                    {currentLanguage === 'en' ? 'Use your left and right arrow keys to move the character. Use the spacebar to interact with objects and advance dialogue.' : '左右矢印キーでキャラクターを移動させてください。スペースキーを使ってオブジェクトとに干渉したり、会話を進めたりできます。'}
+                </div>
+                <div className="page-media-container">
+                    <UnityComponent />
+                </div>
+                <br /><br /><br />
             </div>
-            <div className="page-media-container">
-                <UnityComponent />
-            </div>
-            <br /><br /><br />
         </div>
     );
 }
@@ -505,16 +510,15 @@ interface ProjectsPageProps {
 
 export default function ProjectsPage({ currentLanguage }: ProjectsPageProps): JSX.Element {
   const [hasFaded, setHasFaded] = useState(false); // Track fade animation
-  const [pageTitle, setPageTitle] = useState(''); // Dynamic page title
+  const [pageTitle, setPageTitle] = useState(''); 
   const [pageKey, setPageKey] = useState<string | null>(null); // Key to determine current content
   const carouselContainerRef = useRef<HTMLDivElement>(null); // Ref for carousel
   const pageContentRef = useRef<HTMLDivElement>(null); // Ref for content
   const [isPageContentInView, setIsPageContentInView] = useState(false); // Track content visibility
 
-  const touchStartY = useRef<number | null>(null); // Track starting Y position of touch
-  const touchEndY = useRef<number | null>(null); // Track ending Y position of touch
+  const touchStartY = useRef<number | null>(null); 
+  const touchEndY = useRef<number | null>(null); 
 
-  // Map of button labels to dynamic content
   const contentMap: Record<string, { title: (lang: string) => string; content: (lang: string) => JSX.Element }> = {
     'Ruskin VR Project': {
       title: (lang) => (lang === 'en' ? 'VR Ruskin' : 'VR Ruskinプロジェクト'),
@@ -618,17 +622,15 @@ export default function ProjectsPage({ currentLanguage }: ProjectsPageProps): JS
   return (
     <div
       className="container"
-      onWheel={handleWheel} // Handle mouse wheel scroll
-      onTouchStart={handleTouchStart} // Handle touch start
-      onTouchMove={handleTouchMove} // Handle touch move
-      onTouchEnd={handleTouchEnd} // Handle touch end
+      onWheel={handleWheel}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove} 
+      onTouchEnd={handleTouchEnd} 
     >
-      {/* Carousel Container */}
       <div ref={carouselContainerRef} className={`carousel-container ${hasFaded ? 'faded' : ''}`}>
         <ButtonCarousel buttons={buttons} onButtonClick={handleButtonClick} currentLanguage={currentLanguage}/>
       </div>
 
-      {/* Page Content */}
       <div ref={pageContentRef} className={`page ${hasFaded ? 'faded' : ''}`}>
         {pageTitle && (
           <div className={`page-title ${currentLanguage === 'en' ? 'title-en' : 'title-ja'}`}>
