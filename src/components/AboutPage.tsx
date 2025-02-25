@@ -83,16 +83,38 @@ export default function AboutPage({ currentLanguage }: AboutPageProps): JSX.Elem
                 <div className='page-body'>
                     {currentLanguage === 'en' ? (
                         <>
-                            Through creative computing, I want to shine light on local practices and culture with the modern technology that is available today. If sardine fishing is a traditional craft, I think creative computing is a modern craft. I believe that the evolution of creative technology can continuously provide different stages for tradition to shine, and communicate the beauty to people. I like to use the fishing boats as a comparative metaphor, as the boats have evolved drastically in the past 100 years to catch more and more sardines to bring udon to people. I want to create work that supports timeless value in the same way.
+                            Through creative computing, I want to shine light on culture with the modern technology that is available today. If sardine fishing is a traditional craft, I think creative computing is a modern craft. I believe that the evolution of creative technology can continuously provide different stages for tradition to shine, and communicate the beauty to people. I like to use the fishing boats as a comparative metaphor, as the boats have evolved drastically in the past 100 years to catch more and more sardines to bring udon to people. I want to create work that supports timeless value in the same way.
                         </>
                     ) : (
                         <>
-                            私クリエイティブコンピューティングを通じて、現代の技術を活用し、地域の伝統や文化に光を当てたいと考えています。イワシ漁が伝統技術であるのならば、クリエイティブコンピューティングは現代技術だと思います。クリエイティブ技術の進化は、伝統が輝けるさまざまな舞台を提供し、その美しさを人々に伝える力を持っていると信じています。過去100年間で漁船は大きく進化し、より多くのイワシを捕れるようになり、人々にうどんを届ける助けとなりました。同じように、私は進化していくクリエイティブ技術を用いて世界の様々な場所に存在する伝統や文化を支えたいと思っています。
+                            私クリエイティブコンピューティングを通じて、現代の技術を活用し、文化に光を当てたいと考えています。イワシ漁が伝統技術であるのならば、クリエイティブコンピューティングは現代技術だと思います。クリエイティブ技術の進化は、伝統が輝けるさまざまな舞台を提供し、その美しさを人々に伝える力を持っていると信じています。過去100年間で漁船は大きく進化し、より多くのイワシを捕れるようになり、人々にうどんを届ける助けとなりました。同じように、私は進化していくクリエイティブ技術を用いて世界の様々な場所に存在する伝統や文化を支えたいと思っています。
                         </>
                     )}
                 </div>
 
-                <br /><br />
+                <br/><br/>
+
+                <div className="page-title">
+                    {currentLanguage === 'en' ? 'Education' : '学歴'}
+                </div>
+
+                <div className="page-body">
+                {currentLanguage === 'en' ? (
+                        <>
+                            <strong>May 2020</strong> Graduated Yokohama International School
+                            <br />
+                            <strong>May 2024</strong> Graduated Lancaster University, BSc Computer Science (First Class Honours)
+                        </>
+                    ) : (
+                        <>
+                            <strong>２０２０年５月</strong>: 横浜インターナショナルスクール卒業
+                            <br />
+                            <strong>２０２４年５月</strong>: ランカスター大学 コンピュータサイエンス学士号取得(First Class Honours)
+                        </>
+                    )}
+                </div>
+
+                <br />
 
                 <div className="page-title">
                     {currentLanguage === 'en' ? 'Work Experience' : '職歴'}

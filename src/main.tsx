@@ -10,6 +10,7 @@ import './css/bottom_text.css';
 import './css/animations.css';
 import './css/page.css'
 import './css/button-carousel.css'
+import './css/github-link.css'
 
 import App from './App';
 

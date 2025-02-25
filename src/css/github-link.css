@@ -1,0 +1,48 @@
+/* Github Box */
+.github-link {
+    position: fixed;
+    bottom: 70vh; 
+    left: 5vw;
+    border: 2px solid white; 
+    border-radius: 10px; 
+    padding: 1rem 1rem; 
+    background: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+  
+.github-link:hover {
+    transform: scale(1.05);
+}
+  
+.github-link a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.g-text-en {
+    font-size: clamp(1rem, 4vw, 3rem);
+}
+
+.g-text-ja {
+    font-size: clamp(0.6rem, 3vw, 2rem);
+}
+
+.github-link a:before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    height: 2px;
+    width: 0;
+    background: white;
+    border-radius: 50px;
+    transition: width 0.4s ease;
+}
+
+.github-link a:hover:before {
+    width: 100%; 
+}

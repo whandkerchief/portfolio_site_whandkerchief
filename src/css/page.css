@@ -81,7 +81,7 @@
   }
 
   .page-media-container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@
 .page-iframe {
     border: none;
     height: 50vh;
-    width: 100%;
+    width: 100vw;
 }
 
 @media screen and (min-width: 1025px) {
